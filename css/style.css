@@ -1,0 +1,44 @@
+:root {
+  --fuente: Verdana, Geneva, Tahoma, sans-serif;
+  --negro: #000;
+  --azul: #6495ED;
+  --blanco: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuente);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-larnU {
+  padding: 3rem 5rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.btn-larnU:hover {
+  margin-top: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(var(--negro),0.75);
+  background-color: var(--azul);
+  color: var(--blanco);
+  transition: all 0.4s ease-out;
+}
